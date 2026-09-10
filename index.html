@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#f4f0e8" />
-  <title>衣序 YIXU · 你的每日穿搭编辑</title>
+  <title>Style · 你的每日穿搭编辑</title>
   <style>
     :root{
       --ink:#201d1b;--muted:#716c66;--paper:#f4f0e8;--white:#fffdf8;--line:#d8d0c5;
@@ -66,7 +66,7 @@
 <body>
   <div class="grain"></div>
   <header>
-    <div class="brand"><strong>衣序 YIXU</strong><span>PERSONAL STYLE EDITOR</span></div>
+    <div class="brand"><strong>Style</strong><span>PERSONAL STYLE EDITOR</span></div>
     <nav aria-label="主要导航">
       <button class="active" data-view="today">今日灵感</button>
       <button data-view="wardrobe">我的衣橱</button>
@@ -80,7 +80,7 @@
     <section id="today" class="view active">
       <p class="eyebrow">Tuesday · Your daily edit</p>
       <h1 class="title">今天，想以怎样的<br><i>姿态出现？</i></h1>
-      <p class="sub">告诉衣序你要去哪里、见谁、想留下什么印象。我们会从你的真实衣橱里，拼出恰到好处的一套。</p>
+      <p class="sub">告诉 Style 你要去哪里、见谁、想留下什么印象。我们会从你的真实衣橱里，拼出恰到好处的一套。</p>
       <div class="today-grid">
         <article class="card brief">
           <div class="section-top"><h2>今日场合简报</h2><span class="step">01 / 03</span></div>
@@ -97,7 +97,7 @@
         <article class="card result" id="resultCard">
           <div class="empty-state" id="emptyResult"><div class="circle">✦</div><h3>你的今日造型，等你落笔</h3><p>衣橱里有 3 件以上单品时，搭配会更完整。没有录入也可以先试试看。</p></div>
           <div class="result-content" id="resultContent" hidden>
-            <div class="result-head"><div><small>YIXU EDIT · LOOK 01</small></div><span class="score">匹配度 96%</span></div>
+            <div class="result-head"><div><small>STYLE EDIT · LOOK 01</small></div><span class="score">匹配度 96%</span></div>
             <div class="look-grid" id="lookGrid"></div>
             <div class="look-copy"><h3 id="lookTitle">松弛的城市感</h3><div id="lookReason"></div></div>
             <div class="result-actions"><button class="ghost" id="shuffle">换一套 ↻</button><button class="ghost" id="favorite">♡ 收藏这套</button></div>
@@ -116,12 +116,12 @@
       <div class="profile-top"><div><p class="eyebrow">Style profile</p><h1 class="title">越了解你，<i>越像你。</i></h1></div><p class="sub">不用追逐所有趋势。记录身材与偏好，让每个建议都服务于真实的你。</p></div>
       <div class="profile-grid">
         <article class="card profile-card"><h2>身材信息</h2><div class="two"><div class="field"><label for="height">身高（cm）</label><input class="input" id="height" type="number" placeholder="165"></div><div class="field"><label for="bodyShape">身材特点</label><select id="bodyShape"><option value="">请选择</option><option>梨形</option><option>苹果形</option><option>沙漏形</option><option>直筒形</option><option>倒三角形</option></select></div></div><div class="field"><label for="focus">希望穿搭帮你</label><select id="focus"><option>优化比例</option><option>突出腰线</option><option>修饰腿型</option><option>弱化肩宽</option><option>舒适自在最重要</option></select></div><div class="field"><label for="sizes">常穿尺码 / 备注</label><input class="input" id="sizes" placeholder="例如：上衣 S，下装 M；不喜欢紧领口"></div></article>
-        <article class="card profile-card"><h2>风格坐标</h2><div class="field"><label>最喜欢的风格（可多选）</label><div class="chips profile-chips"><button class="chip">极简</button><button class="chip">法式</button><button class="chip">复古</button><button class="chip">甜酷</button><button class="chip">通勤</button><button class="chip">街头</button></div></div><div class="field"><label for="colors">偏爱 / 避开的颜色</label><input class="input" id="colors" placeholder="例如：喜欢奶油色、酒红；避免荧光色"></div><div class="field"><label for="profileNote">想让衣序记住的事</label><textarea id="profileNote" placeholder="例如：平时走路很多，鞋子要舒服；希望风格更成熟一点…"></textarea></div><button class="primary" id="saveProfile">保存风格档案</button><div class="save-note" id="saveNote"></div></article>
+        <article class="card profile-card"><h2>风格坐标</h2><div class="field"><label>最喜欢的风格（可多选）</label><div class="chips profile-chips"><button class="chip">极简</button><button class="chip">法式</button><button class="chip">复古</button><button class="chip">甜酷</button><button class="chip">通勤</button><button class="chip">街头</button></div></div><div class="field"><label for="colors">偏爱 / 避开的颜色</label><input class="input" id="colors" placeholder="例如：喜欢奶油色、酒红；避免荧光色"></div><div class="field"><label for="profileNote">想让 Style 记住的事</label><textarea id="profileNote" placeholder="例如：平时走路很多，鞋子要舒服；希望风格更成熟一点…"></textarea></div><button class="primary" id="saveProfile">保存风格档案</button><div class="save-note" id="saveNote"></div></article>
       </div>
     </section>
 
     <section id="inspiration" class="view">
-      <div class="wardrobe-top"><div><p class="eyebrow">Style inspiration</p><h1 class="title">把心动穿搭，<i>变成你的。</i></h1><p class="sub">上传喜欢的博主穿搭，再标记你真正喜欢的部分。衣序会学习这些偏好，用你已有的衣服复刻氛围，而不是照搬单品。</p></div><label class="primary upload">＋ 上传博主穿搭<input type="file" id="inspoInput" accept="image/*" multiple></label></div>
+      <div class="wardrobe-top"><div><p class="eyebrow">Style inspiration</p><h1 class="title">把心动穿搭，<i>变成你的。</i></h1><p class="sub">上传喜欢的博主穿搭，再标记你真正喜欢的部分。Style 会学习这些偏好，用你已有的衣服复刻氛围，而不是照搬单品。</p></div><label class="primary upload">＋ 上传博主穿搭<input type="file" id="inspoInput" accept="image/*" multiple></label></div>
       <div class="inspo-banner card"><div><span class="inspo-icon">♥</span><b id="inspoCount">0 个灵感样本</b><small>标签越准确，推荐越懂你</small></div><div id="styleDNA" class="dna">风格 DNA 尚未形成</div></div>
       <div class="inspo-grid" id="inspoGrid"></div>
     </section>
