@@ -1,4 +1,4 @@
-const CACHE_NAME = 'style-mvp-v1';
+const CACHE_NAME = 'style-mvp-v2';
 const APP_SHELL = ['./', './index.html', './manifest.webmanifest', './icon.svg'];
 
 self.addEventListener('install', event => {
