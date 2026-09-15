@@ -1,0 +1,15 @@
+{
+  "name": "Style · 你的每日穿搭编辑",
+  "short_name": "Style",
+  "description": "从真实衣橱出发，结合天气、场合和个人灵感生成穿搭建议。",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff7d6",
+  "theme_color": "#ff3d91",
+  "orientation": "portrait-primary",
+  "icons": [
+    {"src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+  ]
+}
